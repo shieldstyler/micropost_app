@@ -1,2 +1,16 @@
-<h1>'Sample App'</h1>
-<p>Yep it worked.</p>
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Micropost | <%= yield(:title) %></title>
+  </head>
+<body>
+<h1>Micropost</h1>
+  <p>
+    This is the Home page for the Micropost, my
+    <a href="http://railstutorial.org/">Ruby on Rails</a>
+    sample application.
+  </p>
+</body>
+</html>
+>
