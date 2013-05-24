@@ -13,53 +13,62 @@ $grayMediumLight: #eaeaea;
 html {
 overflow-y: scroll;
 }
+
 body {
 padding-top: 60px;
 }
+
 section {
 overflow: auto;
 }
+
 textarea {
 resize: vertical;
 }
+
 .center {
-text-align: center;
-h1 {
-margin-bottom: 10px;
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
 }
-}
+
 /* typography */
 h1, h2, h3, h4, h5, h6 {
-line-height: 1;
+	line-height: 1;
 }
+
 h1 {
-font-size: 3em;
-letter-spacing: -2px;
-margin-bottom: 30px;
-text-align: center;
+	font-size: 3em;
+	letter-spacing: -2px;
+	margin-bottom: 30px;
+	text-align: center;
 }
+
 h2 {
-font-size: 1.7em;
-letter-spacing: -1px;
-margin-bottom: 30px;
-text-align: center;
-font-weight: normal;
-color: $grayLight;
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: normal;
+	color: $grayLight;
 }
+
 h3 {
-font-size: 1.7em;
-letter-spacing: -1px;
-margin-top: 20px;
-margin-bottom: 5px;
-text-align: left;
-font-weight: normal;
-color: $grayLight;
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-weight: normal;
+	color: $grayLight;
 }
 
 p {
 	font-size: 1.1em;
 	line-height: 1.7em;
 }
+
 /* header */
 #logo {
 	float: left;
@@ -76,30 +85,32 @@ p {
 		text-decoration: none;
 	}
 }
+
 /* footer */
 footer {
-margin-top: 45px;
-padding-top: 5px;
-border-top: 1px solid $grayMediumLight;
-color: $grayLight;
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid $grayMediumLight;
+	color: $grayLight;
 	a {
-	color: $gray;
+		color: $gray;
 		&:hover {
-		color: $grayDarker;
+			color: $grayDarker;
 		}
 	}
 	small {
-	float: left;
+		float: left;
 	}
 	ul {
-	float: right;
-	list-style: none;
+		float: right;
+		list-style: none;
 		li {
-		float: left;
-		margin-left: 10px;
+			float: left;
+			margin-left: 10px;
 		}
 	}
 }
+
 
 /*miscellaneous*/
 .debug_dump {
@@ -117,7 +128,7 @@ aside {
 		&:first-child {
 			border: 0;
 			padding-top: 0;
-text-align: left;	}
+			text-align: left;	}
 		span {
 			display: block;
 			margin-bottom: 3px;
@@ -134,7 +145,7 @@ text-align: left;	}
 
 .gravatar {
 	float: left;
-	margin-right: 1px;
+	margin-right: 8px;
 }
 
 /* forms */
@@ -159,3 +170,18 @@ input, textarea, select, .uneditable-input {
 	@extend .error;
 }
 
+
+/* users index */
+
+.users {
+	list-style: none;
+	margin: 0;
+	li {
+		overflow: auto;
+		padding: 10px 0;
+		border-top: 1px solid $grayLighter;
+		&:last-child {
+			border-bottom: 1px solid $grayLighter;
+		}
+	}
+}
