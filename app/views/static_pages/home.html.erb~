@@ -1,7 +1,7 @@
 <div class="center hero-unit">
 <h1>Welcome to Micropost</h1>
   <h2>
-    The best thing on the internet.
+    Welcome! Like the rest of the internet, but better.
    </h2>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
