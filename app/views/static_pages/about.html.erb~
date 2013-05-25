@@ -1,6 +1,6 @@
 <% provide(:title, 'About Us') %>
 <h1>Micropost</h1>
-<h3>An information network</h3>
+<h6>An information network</h6>
 
 <p>
 Micropost is a real-time information network that connects you to the latest stories, ideas, opinions and news about what you find interesting. Simply find the accounts you find most compelling and follow the conversations.
@@ -31,7 +31,7 @@ Micropost around the world
 </h3>
 
 <p>
-Micropost was founded in Seattle, but it's used by people in nearly every country in the world. The service is available in more than 20 languages, and we continue to add them. You can change your language preference in your user settings with just a few clicks.
+Micropost was founded in San Francisco, but it's used by people in nearly every country in the world. The service is available in more than 20 languages, and we continue to add them. You can change your language preference in your user settings with just a few clicks.
 </p>
 
 <h3>
