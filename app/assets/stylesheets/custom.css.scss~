@@ -195,19 +195,23 @@ input, textarea, select, .uneditable-input {
 	li {
 		padding: 10px 0;
 		border-top: 1px solid #e8e8e8;
+		clear: both;
+		font-size: 12pt;
+		letter-spacing: -1px;
+		text-align: left
 	}
 }
 .content {
 	display: block;
 	font-size: 14pt;
 	text-align: left;
-	letter-spacing: -1px
-	}
+	letter-spacing: -1px;
+}
 .timestamp {
 	color: $grayLight;
 	font-size: 12pt;
 	text-align: left;
-	letter-spacing: 0px;
+	letter-spacing: -1px;
 }
 .gravatar {
 	float: left;
