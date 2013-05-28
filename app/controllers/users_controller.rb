@@ -17,8 +17,8 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 		if @user.save
 			sign_in @user
-			flash[:success] = "Welcome to Micropost!"
-			redirect_to @user	
+			flash[:success] = "Welcome to Micropost! Make a post, or find your friends and follow them by clicking the 'Users' link above."
+			redirect_to root_path	
 		else
 			render 'new'
 		end
