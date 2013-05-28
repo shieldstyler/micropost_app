@@ -198,7 +198,7 @@ input, textarea, select, .uneditable-input {
 		clear: both;
 		font-size: 12pt;
 		letter-spacing: -1px;
-		text-align: left
+		text-align: left;
 	}
 }
 .content {
