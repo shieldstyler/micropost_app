@@ -70,6 +70,19 @@ p {
 }
 
 /* header */
+
+.navbar-inner {
+  background-color: black; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+/*
+.container {
+ background-color: green;
+ }*/
+
 #logo {
 	float: left;
 	margin-right: 10px;
@@ -181,7 +194,7 @@ input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
 	width: 100%;
 	padding: 10px;
-	height: auto;
+	height: auto !important;
 	margin-bottom: 15px;
 	@include box_sizing;
 }
