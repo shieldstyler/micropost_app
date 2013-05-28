@@ -72,15 +72,28 @@ p {
 /* header */
 
 .navbar-inner {
-  background-color: black; /* background color will be black for all browsers */
-
+  background-color: #000; /* background color will be black for all browsers */
+  background-image: none;
 }
 
 /*
+.navbar-fixed-top {
+	color: red;
+	text-shadow: none;
+}
+
 .container {
  background-color: green;
  }*/
-
+#head {
+	color: $grayLight;
+	text-decoration: none;
+	text-shadow: none;
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
+}
 #logo {
 	float: left;
 	margin-right: 10px;
@@ -96,6 +109,13 @@ p {
 		text-decoration: none;
 	}
 }
+/*.headeritem { 
+	text-decoration: none;
+	text-color: white;
+	color: green;
+	font-color: green;
+	text-shadow:0 -5px 0 rgba(0, 0, 0, 0.25);
+}*/
 
 /* footer */
 footer {
