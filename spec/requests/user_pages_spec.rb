@@ -23,10 +23,21 @@ describe "User pages" do
 			it "should list each user" do
 				User.paginate(page: 1).each do |user|
 					page.should have_selector('li', text: user.name)
+					page.should have_button "Follow"
 				end
 			end
+				#	it "should change to Unfollow when clicked" do
+			#			expect do
+			#				click_button "Follow"
+			#			end.to change(user.followed_users, :count).by(1)
+			#		end
+			#		describe "toggling the button" do
+			#			before { click_button "Follow" }
+			#			it { should have_selector('input', value: 'Unfollow') }
+			#		end
+			#	end
+		#	end
 		end
-
 		describe "delete links" do
 			
 			it { should_not have_link('delete') }
@@ -112,6 +123,9 @@ describe "User pages" do
 					it { should have_selector('input', value: 'Follow') }
 				end
 			end
+			describe "following and unfollowing on the user index" do
+		##################	
+			end
 		end
 	end
 
@@ -148,7 +162,7 @@ describe "User pages" do
 				before { click_button submit }
 				let(:user) { User.find_by_email('user@example.com') }
 
-				it { should have_selector('title', text: user.name) }
+				it { should have_selector('title', text: "Micropost") }
 				it { should have_selector('div.alert.alert-success', text: 'Welcome') }
 				it { should have_link('Sign out') }
 
@@ -168,7 +182,7 @@ describe "User pages" do
 		describe "page" do
 			it { should have_selector('h1',	text: "Update your profile") }
 			it { should have_selector('title', text: "Edit user") }
-			it { should have_link('change', href: 'http://gravatar.com/emails') }
+			it { should have_link('Gravatar', href: 'http://gravatar.com/emails') }
 		end
 
 		describe "with invalid information" do
