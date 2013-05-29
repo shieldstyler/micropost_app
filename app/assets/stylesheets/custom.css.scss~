@@ -74,6 +74,7 @@ p {
 .navbar-inner {
   background-color: #000; /* background color will be black for all browsers */
   background-image: none;
+  filter: none;
 }
 
 /*
@@ -86,7 +87,7 @@ p {
  background-color: green;
  }*/
 #head {
-	color: $gray;
+	color: $grayLight;
 	text-decoration: none;
 	text-shadow: none;
 	&:hover {
